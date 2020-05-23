@@ -1,0 +1,18 @@
+# https://taskfile.dev
+version: '2'
+tasks:
+  install-nodejs:
+    desc: install nodejs
+    cmds:
+      - |
+        echo use ASDF to manage multiple versions
+        asdf install nodejs 14.3.0
+  install-vue-tools:
+    cmds:
+      - |
+        npm install -g @vue/cli
+        npm install -g @vue/cli-init
+
+  init-prj:
+    cmds:
+      - vue init kocal/vue-web-extension new-tab-page
