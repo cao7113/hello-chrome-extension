@@ -12,7 +12,19 @@ tasks:
       - |
         npm install -g @vue/cli
         npm install -g @vue/cli-init
-
-  init-prj:
+  init:
     cmds:
-      - vue init kocal/vue-web-extension new-tab-page
+      - |
+        vue init kocal/vue-web-extension new-tab-page
+        cd new-tab-page
+        npm install
+  dev:
+    cmds:
+      - |
+        cd new-tab-page
+        npm run watch:dev
+  rel-build:
+    cmds:
+      - |
+        cd new-tab-page
+        npm run build-zip
