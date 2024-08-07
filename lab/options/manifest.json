@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Options Demo",
+  "version": "1.0",
+  "description": "Try options page",
+  "permissions": ["storage"],
+  "options_page": "options.html"
+}
