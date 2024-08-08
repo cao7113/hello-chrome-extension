@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Popup",
+  "version": "1.0",
+  "description": "popup demo",
+  "action": {
+    "default_popup": "index.html"
+  }
+}
